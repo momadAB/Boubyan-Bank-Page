@@ -5,8 +5,8 @@ import Image from "next/image";
 function Footer() {
   return (
     <>
-      <footer>
-        <div className="grid md:grid-cols-2 grid-cols-1 text-white relative text-lg">
+      <footer className="relative  mt-[-25rem]">
+        <div className="grid md:grid-cols-2 grid-cols-1 text-white relative ">
           {/* Background Image */}
           <div className="absolute pointer-events-none bg-[#54585A] -z-10 overflow-x-visible overflow-y-visible h-full md:h-auto md:w-full md:bottom-auto flex items-end ">
             <Image
@@ -15,7 +15,12 @@ function Footer() {
               priority
               unoptimized={true}
             />
-            <p>SSNJKFBSEJF</p>
+
+            <div className="bg-white p-5 text-black pointer-events-auto hidden md:block">
+              <p className="font-medium text-[#54585A]">
+                © Copyright 2020. Boubyan Digital Factory. All Rights Reserved.
+              </p>
+            </div>
           </div>
 
           {/* First section of flex */}
@@ -63,7 +68,7 @@ function Footer() {
             </button>
           </div>
           {/* Second section of flex */}
-          <div className="m-7 md:m-20 flex flex-col gap-16">
+          <div className="m-7 md:m-20 flex flex-col gap-16 text-sm">
             <h1 className="font-bold text-2xl ">Contact Us</h1>
             <div className="flex justify-between flex-wrap gap-5">
               <span className="w-full md:w-1/5 ">

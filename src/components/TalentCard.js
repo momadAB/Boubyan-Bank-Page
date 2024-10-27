@@ -5,7 +5,7 @@ import TalentCardPNG from "../assets/TalentCardPNG.png";
 function TalentCard() {
   return (
     <>
-      <div className="justify-center flex flex-wrap bg-[#D22630] relative mt-60 text-white pt-[15rem] lg:pt-[20rem] text-center text-xl">
+      <div className="justify-center flex flex-wrap bg-[#D22630] relative mt-60 text-white pt-[15rem] lg:pt-[20rem] text-center top-[-15rem]">
         {/* Image */}
         <div className="absolute top-[-10rem] lg:top-[-20rem] flex-1 pointer-events-none">
           <Image src={TalentCardPNG} />

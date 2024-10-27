@@ -2,8 +2,8 @@ import React from "react";
 
 function Part3() {
   return (
-    <div className="flex items-center justify-center min-h-screen p-4">
-      <div className="w-3/4 bg-white rounded-md shadow-[0px_20px_20px_10px_#00000024] p-8">
+    <div className="flex items-center justify-center min-h-screen p-4 relative top-[-25rem]">
+      <div className="md:w-3/4 bg-white rounded-md shadow-[0px_20px_20px_10px_#00000024] p-8">
         <h1 className="text-center font-bold text-4xl my-8">
           Different areas of expertise, one powerful team
         </h1>

@@ -7,15 +7,15 @@ import Path8 from "../../ImgAssets/Path8.png";
 function Part1() {
   return (
     <div className="relative w-full flex flex-col items-center justify-center min-h-screen mx-auto px-10 pt-8">
-      <div className="relative flex flex-wrap lg:flex-nowrap items-center justify-center mx-auto px-24">
+      <div className="relative flex flex-wrap lg:flex-nowrap items-center justify-center mx-auto md:px-24">
         <Image
           src={Group19img}
           alt="Picture of Group19"
           width={0}
           height={0}
           sizes="100vw"
-          style={{ width: "35%", height: "auto" }}
-          className="ml-8 mr-8 shrink-0"
+          style={{ height: "auto" }}
+          className="ml-8 mr-8 shrink-0 w-[20rem] md:w-1/3"
         />
         <div className="lg:ml-8 mt-4 lg:mt-0">
           <h1 className="font-bold mb-3 text-3xl">
@@ -38,7 +38,7 @@ function Part1() {
         </div>
       </div>
       <div className="my-5" />
-      <div className="relative flex flex-wrap lg:flex-nowrap items-center justify-center mx-auto px-24">
+      <div className="relative flex flex-wrap lg:flex-nowrap items-center justify-center mx-auto md:px-24">
         <div className="lg:ml-8 mt-4 lg:mt-0">
           <h1 className="font-bold mb-3 text-3xl">
             We <span className="text-red-600">innovate</span> today for the
@@ -64,8 +64,8 @@ function Part1() {
           width={0}
           height={0}
           sizes="100vw"
-          style={{ width: "35%", height: "auto" }}
-          className="ml-8 mr-8 shrink-0"
+          style={{ height: "auto" }}
+          className="ml-8 mr-8 shrink-0 md:w-1/3"
         />
       </div>
       <div className="my-24" />
