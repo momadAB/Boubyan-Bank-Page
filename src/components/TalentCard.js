@@ -5,15 +5,24 @@ import TalentCardPNG from "../assets/TalentCardPNG.png";
 function TalentCard() {
   return (
     <>
-      <div className="justify-center flex flex-wrap bg-[#D22630] relative mt-60 text-white pt-[15rem] lg:pt-[20rem] text-center">
+      <div className="justify-center flex flex-wrap bg-[#D22630] relative mt-60 text-white pt-[15rem] lg:pt-[20rem] text-center text-xl">
         {/* Image */}
         <div className="absolute top-[-10rem] lg:top-[-20rem] flex-1 pointer-events-none">
           <Image src={TalentCardPNG} />
         </div>
-        <h1 className="font-bold text-2xl m-2 basis-full leading-10 ">
+        <h1 className="font-bold text-3xl md:text-5xl m-4 basis-full leading-10">
           You are here because you believe in your exceptional talent.
         </h1>
-        <div className="font-lg px-[2rem] lg:px-[5rem] m-2 basis-full ">
+        <div className="font-lg px-[2rem] lg:px-[5rem] m-2 basis-full mt-9 mb-9">
+          <p className="hidden md:block md:leading-[0]">
+            Boubyan Digital Factory offers a great potential for growth and
+            development in a unique
+          </p>
+          <br />
+          <p className="hidden md:block md:leading-[0]">
+            {" "}
+            environment driven by a strong culture of digital innovation.
+          </p>
           <p>
             Boubyan Digital Factory offers a great potential for growth and
             development in a unique environment driven by a strong culture of
@@ -21,7 +30,7 @@ function TalentCard() {
           </p>
         </div>
         {/* Cards */}
-        <div className="flex w-full justify-around mt-5 text-left mb-32 flex-wrap p-8">
+        <div className="flex w-full justify-around mt-5 text-left mb-32 flex-wrap p-8 gap-12 md:gap-0">
           {/* Big Ideas Card */}
           <div className=" md:w-1/5 w-full">
             <svg

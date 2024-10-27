@@ -6,12 +6,12 @@ function Footer() {
   return (
     <>
       <footer>
-        <div className="grid md:grid-cols-2 grid-cols-1 text-white relative">
+        <div className="grid md:grid-cols-2 grid-cols-1 text-white relative text-lg">
           {/* Background Image */}
-          <div className="absolute pointer-events-none bg-[#54585A] -z-10 overflow-x-visible overflow-y-visible h-full md:h-auto md:w-full">
+          <div className="absolute pointer-events-none bg-[#54585A] -z-10 overflow-x-visible overflow-y-visible h-full md:h-auto md:w-full md:bottom-auto flex items-end ">
             <Image
               src={KuwaitCityBoubyanPNG}
-              className="mix-blend-multiply"
+              className="mix-blend-multiply object-contain"
               priority
               unoptimized={true}
             />
@@ -70,7 +70,7 @@ function Footer() {
           {/* Second section of flex */}
           <div className="m-7 md:m-20 flex flex-col gap-16">
             <h1 className="font-bold text-2xl ">Contact Us</h1>
-            <div className="flex text-sm justify-between flex-wrap gap-5">
+            <div className="flex justify-between flex-wrap gap-5">
               <span className="w-full md:w-1/5 ">
                 <p className="text-[#BABABA]">ADDRESS</p>
                 <p>12 St, heliopolis, Cairo - Egypt</p>
@@ -85,7 +85,7 @@ function Footer() {
               </span>
             </div>
             {/* Linkedin SVG */}
-            <div className="cursor-pointer flex gap-6 items-center">
+            <div className="cursor-pointer flex gap-6 items-center mb-12 md:mb-0">
               <svg
                 width="32"
                 height="32"
@@ -103,6 +103,11 @@ function Footer() {
               <p className="font-medium">Check our Linkedin Page</p>
             </div>
           </div>
+        </div>
+        <div className="bg-white p-5 text-black pointer-events-auto md:hidden">
+          <p className="font-medium text-[#54585A]">
+            © Copyright 2020. Boubyan Digital Factory. All Rights Reserved.
+          </p>
         </div>
       </footer>
     </>
