@@ -7,7 +7,7 @@ function TalentCard() {
     <>
       <div className="justify-center flex flex-wrap bg-[#D22630] relative mt-60 text-white pt-[15rem] lg:pt-[20rem] text-center">
         {/* Image */}
-        <div className="absolute top-[-10rem] lg:top-[-20rem] flex-1">
+        <div className="absolute top-[-10rem] lg:top-[-20rem] flex-1 pointer-events-none">
           <Image src={TalentCardPNG} />
         </div>
         <h1 className="font-bold text-2xl m-2 basis-full leading-10 ">
