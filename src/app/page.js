@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import Group56 from "../ImgAssets/Group56.png";
 import Group8 from "../ImgAssets/Group8.png";
@@ -6,9 +7,14 @@ import Group17 from "../ImgAssets/Group17.png";
 import Path2 from "../ImgAssets/Path2.png";
 import Path8 from "../ImgAssets/Path8.png";
 import Group37 from "../ImgAssets/Group37.png";
+import Navbar from "@/components/Navbar";
+import TalentCard from "@/components/TalentCard";
 
 export default function Home() {
   return (
+    <>
+          <Navbar />
+      <TalentCard />
     <div className="flex-col justify-items-center">
       <div className="relative w-full flex justify-center items-center">
         <Image
@@ -78,5 +84,6 @@ export default function Home() {
         style={{ width: "100%", height: "auto" }}
       />
     </div>
+</>
   );
 }
