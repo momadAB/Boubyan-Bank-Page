@@ -21,7 +21,7 @@ function TalentCard() {
           </p>
         </div>
         {/* Cards */}
-        <div className="flex w-full justify-around mt-5 text-left mb-32 flex-wrap gap-6 p-8">
+        <div className="flex w-full justify-around mt-5 text-left mb-32 flex-wrap p-8">
           {/* Big Ideas Card */}
           <div className=" md:w-1/5 w-full">
             <svg

@@ -6,7 +6,7 @@ function Footer() {
   return (
     <>
       <footer>
-        <div className="grid grid-cols-2 text-white relative">
+        <div className="grid md:grid-cols-2 grid-cols-1 text-white relative">
           {/* Background Image */}
           <div className="absolute pointer-events-none bg-[#54585A] -z-10 overflow-x-visible overflow-y-visible h-full md:h-auto md:w-full">
             <Image
@@ -16,7 +16,7 @@ function Footer() {
               unoptimized={true}
             />
 
-            <div className="bg-white p-5 text-black pointer-events-auto">
+            <div className="bg-white p-5 text-black pointer-events-auto hidden md:block">
               <p className="font-medium text-[#54585A]">
                 © Copyright 2020. Boubyan Digital Factory. All Rights Reserved.
               </p>
@@ -25,7 +25,7 @@ function Footer() {
 
           {/* First section of flex */}
           {/* Boubyan Logo SVG */}
-          <div className="m-20 mr-56 flex flex-col gap-10">
+          <div className=" m-7 md:m-20 md:mr-56 flex flex-col gap-10">
             <svg
               width="135"
               height="50"
@@ -68,9 +68,9 @@ function Footer() {
             </button>
           </div>
           {/* Second section of flex */}
-          <div className="m-20 flex flex-col gap-16">
-            <h1 className="font-bold text-2xl">Contact Us</h1>
-            <div className="flex text-sm justify-between">
+          <div className="m-7 md:m-20 flex flex-col gap-16">
+            <h1 className="font-bold text-2xl ">Contact Us</h1>
+            <div className="flex text-sm justify-between flex-wrap gap-5">
               <span className="w-full md:w-1/5 ">
                 <p className="text-[#BABABA]">ADDRESS</p>
                 <p>12 St, heliopolis, Cairo - Egypt</p>
