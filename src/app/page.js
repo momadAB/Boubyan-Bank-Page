@@ -1,12 +1,9 @@
 import Image from "next/image";
 import Group56 from "../ImgAssets/Group56.png";
 import Group19img from "../ImgAssets/4401279.png";
-import Group8 from "../ImgAssets/Group8.png";
-import Group19 from "../ImgAssets/Group19.png";
 import Group13 from "../ImgAssets/Group13.png";
 import Path2 from "../ImgAssets/Path2.png";
 import Path8 from "../ImgAssets/Path8.png";
-import Group37 from "../ImgAssets/Group37.png";
 
 export default function Home() {
   return (
@@ -38,15 +35,6 @@ export default function Home() {
           style={{ width: "100%", height: "auto" }}
           className="absolute mt-48 mb-48"
         />
-        {/* <Image
-          src={Group8}
-          alt="Picture of Group8"
-          width={0}
-          height={0}
-          sizes="100vw"
-          style={{ width: "40%", height: "auto" }}
-          className="absolute top-18 left-40"
-        /> */}
       </div>
       <div className="relative w-full flex flex-col items-center justify-center min-h-screen mx-auto px-10 pt-8">
         <div className="relative flex flex-wrap lg:flex-nowrap items-center justify-center mx-auto px-24">
@@ -198,15 +186,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      {/* <Image
-        src={Group37}
-        alt="Picture of Group37"
-        width={0}
-        height={0}
-        sizes="100vw"
-        style={{ width: "100%", height: "auto" }}
-      /> */}
     </div>
   );
 }
