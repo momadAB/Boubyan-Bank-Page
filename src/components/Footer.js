@@ -15,12 +15,7 @@ function Footer() {
               priority
               unoptimized={true}
             />
-
-            <div className="bg-white p-5 text-black pointer-events-auto hidden md:block">
-              <p className="font-medium text-[#54585A]">
-                © Copyright 2020. Boubyan Digital Factory. All Rights Reserved.
-              </p>
-            </div>
+            <p>SSNJKFBSEJF</p>
           </div>
 
           {/* First section of flex */}

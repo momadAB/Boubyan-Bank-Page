@@ -23,7 +23,7 @@ function TalentCard() {
             {" "}
             environment driven by a strong culture of digital innovation.
           </p>
-          <p>
+          <p className="block md:hidden">
             Boubyan Digital Factory offers a great potential for growth and
             development in a unique environment driven by a strong culture of
             digital innovation.

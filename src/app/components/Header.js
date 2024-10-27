@@ -3,7 +3,7 @@ import Group56 from "../../ImgAssets/Group56.png";
 
 function Header() {
   return (
-    <div className="relative w-full flex justify-center items-center">
+    <div className="relative w-full flex justify-center items-center mb-32">
       <div className="text-left max-w-96 z-10">
         <h1 className="font-bold text-3xl">
           Digital Factory Now <br />

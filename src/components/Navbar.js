@@ -10,7 +10,7 @@ function Navbar() {
   };
 
   return (
-    <header className="shadow-md flex items-center justify-between p-4 text-[#54585A] sticky top-0 z-10 bg-white">
+    <header className="shadow-md flex items-center justify-between p-4 text-[#54585A] sticky top-0 z-50 bg-white">
       {/* Hamburger Menu for Mobile */}
       <div className="lg:hidden mr-4">
         <button
