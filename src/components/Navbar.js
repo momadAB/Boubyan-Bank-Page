@@ -1,9 +1,40 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <header className="shadow-md flex items-center justify-between p-4 text-[#54585A]">
-      <div className="ml-7">
+    <header className="shadow-md flex items-center justify-between p-4 text-[#54585A] sticky top-0 z-50 bg-white">
+      {/* Hamburger Menu for Mobile */}
+      <div className="lg:hidden mr-4">
+        <button
+          onClick={toggleMenu}
+          className="focus:outline-none p-2 text-gray-700"
+        >
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+      </div>
+
+      <div className="lg:ml-7 m-auto">
         {/* Boubyan Logo */}
         <svg
           width="134"
@@ -26,29 +57,65 @@ function Navbar() {
           />
         </svg>
       </div>
-      {/* Navbar Buttons */}
-      <div className="ml-auto mr-8 select-none cursor-pointer gap-4 flex font-bold h-auto">
-        <span>Home</span>
-        <span>About Us</span>
-        <span>What we do</span>
-        <span>Why join us</span>
-        <span>Careers</span>
+
+      {/* Fullscreen overlay for mobile menu */}
+      <div
+        className={`lg:flex lg:ml-auto lg:mr-8 lg:relative lg:w-auto lg:h-auto transition-all duration-300 ${
+          isOpen
+            ? "block absolute top-0 left-0 w-full h-screen bg-white z-10"
+            : "hidden"
+        }`}
+      >
+        {/* Close button */}
+        <div className="absolute top-4 right-4 lg:hidden">
+          <button
+            onClick={toggleMenu}
+            className="focus:outline-none p-2 text-gray-700"
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <nav className="flex flex-col lg:flex-row gap-4 font-bold h-full items-center justify-center">
+          <span className="cursor-pointer text-2xl md:text-lg">Home</span>
+          <span className="cursor-pointer text-2xl md:text-lg">About Us</span>
+          <span className="cursor-pointer text-2xl md:text-lg">What we do</span>
+          <span className="cursor-pointer text-2xl md:text-lg">
+            Why join us
+          </span>
+          <span className="cursor-pointer text-2xl md:text-lg">Careers</span>
+        </nav>
       </div>
-      {/* Line seperator */}
-      <div className="border-2 border-[#979797]] h-8 mr-8"></div>
+
+      {/* Line separator */}
+      <div className="border-2 border-[#979797] h-8 mr-8 hidden lg:block"></div>
+
       {/* Linkedin Logo */}
-      <div className="top-6 right-20 cursor-pointer">
+      <div className="top-6 md:mr-20 cursor-pointer">
         <svg
-          width="109"
-          height="32"
-          viewBox="0 0 109 32"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
             fill-rule="evenodd"
             clip-rule="evenodd"
-            d="M1.772 4H22.2213C23.2 4 24 4.77333 24 5.72933V26.2707C24 27.2267 23.2 28 22.2213 28H1.77067C0.792 28 0 27.2267 0 26.2707V5.72933C0 4.77333 0.790667 4 1.772 4ZM3.87661 10.8291C4.26372 11.2165 4.78905 11.4339 5.33667 11.4333L5.336 11.4333H5.33733L5.33667 11.4333C6.47628 11.4337 7.4006 10.5104 7.40133 9.37067C7.40207 8.23075 6.47858 7.30607 5.33867 7.30533C4.19875 7.3046 3.27407 8.22808 3.27333 9.368C3.27227 9.91585 3.48934 10.4416 3.87661 10.8291ZM16.8933 24.452H20.4467H20.448V18.1653C20.448 15.0813 19.7813 12.7107 16.1813 12.7107C14.448 12.7107 13.288 13.6613 12.8107 14.56H12.764V13H9.35067V24.452H12.9053V18.7853C12.9053 17.2907 13.188 15.8453 15.04 15.8453C16.8667 15.8453 16.8933 17.5547 16.8933 18.8827V24.452ZM3.55467 24.452V13H7.12V24.452H7.11867H3.55467Z"
+            d="M1.772 0H22.2213C23.2 0 24 0.773333 24 1.72933V22.2707C24 23.2267 23.2 24 22.2213 24H1.77067C0.792 24 0 23.2267 0 22.2707V1.72933C0 0.773333 0.790667 0 1.772 0ZM3.87661 6.82911C4.26372 7.21647 4.78905 7.43387 5.33667 7.43333L5.336 7.43333H5.33733L5.33667 7.43333C6.47628 7.43371 7.4006 6.51036 7.40133 5.37067C7.40207 4.23075 6.47858 3.30607 5.33867 3.30533C4.19875 3.3046 3.27407 4.22808 3.27333 5.368C3.27227 5.91585 3.48934 6.4416 3.87661 6.82911ZM16.8933 20.452H20.4467H20.448V14.1653C20.448 11.0813 19.7813 8.71067 16.1813 8.71067C14.448 8.71067 13.288 9.66133 12.8107 10.56H12.764V9H9.35067V20.452H12.9053V14.7853C12.9053 13.2907 13.188 11.8453 15.04 11.8453C16.8667 11.8453 16.8933 13.5547 16.8933 14.8827V20.452ZM3.55467 20.452V9H7.12V20.452H7.11867H3.55467Z"
             fill="black"
           />
         </svg>

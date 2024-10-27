@@ -5,25 +5,34 @@ import TalentCardPNG from "../assets/TalentCardPNG.png";
 function TalentCard() {
   return (
     <>
-      <div className="h-full w-auto justify-center flex flex-wrap bg-[#D22630] relative mt-60 text-white pt-[20rem] text-center">
+      <div className="justify-center flex flex-wrap bg-[#D22630] relative mt-60 text-white pt-[15rem] lg:pt-[20rem] text-center top-[-15rem]">
         {/* Image */}
-        <div className="absolute top-[-20rem] flex-1">
+        <div className="absolute top-[-10rem] lg:top-[-20rem] flex-1 pointer-events-none">
           <Image src={TalentCardPNG} />
         </div>
-        <h1 className="font-bold text-2xl m-2 basis-full">
+        <h1 className="font-bold text-3xl md:text-5xl m-4 basis-full leading-10">
           You are here because you believe in your exceptional talent.
         </h1>
-        <div className="font-lg px-[5rem] m-2 basis-full whitespace-pre">
-          <p>
+        <div className="font-lg px-[2rem] lg:px-[5rem] m-2 basis-full mt-9 mb-9">
+          <p className="hidden md:block md:leading-[0]">
+            Boubyan Digital Factory offers a great potential for growth and
+            development in a unique
+          </p>
+          <br />
+          <p className="hidden md:block md:leading-[0]">
+            {" "}
+            environment driven by a strong culture of digital innovation.
+          </p>
+          <p className="block md:hidden">
             Boubyan Digital Factory offers a great potential for growth and
             development in a unique environment driven by a strong culture of
             digital innovation.
           </p>
         </div>
         {/* Cards */}
-        <div className="flex w-full justify-around mt-5">
+        <div className="flex w-full justify-around mt-5 text-left mb-32 flex-wrap p-8 gap-12 md:gap-0">
           {/* Big Ideas Card */}
-          <div className="">
+          <div className=" md:w-1/5 w-full">
             <svg
               width="55"
               height="63"
@@ -38,14 +47,14 @@ function TalentCard() {
                 fill="white"
               />
             </svg>
-            <h1>Big Ideas</h1>
-            <p>
+            <h1 className="my-4 font-bold">Big Ideas</h1>
+            <p className="">
               We’re looking for problem-solvers, makers, and leaders who are
               ready to roll up their sleeves and collaborate to ship solutions
               to our customers.
             </p>
           </div>
-          <div>
+          <div className="md:w-1/5 w-full">
             <svg
               width="67"
               height="68"
@@ -60,14 +69,14 @@ function TalentCard() {
                 fill="white"
               />
             </svg>
-            <h1>Big Ideas</h1>
+            <h1 className="my-4 font-bold">Something new everyday</h1>
             <p>
-              We’re looking for problem-solvers, makers, and leaders who are
-              ready to roll up their sleeves and collaborate to ship solutions
-              to our customers.
+              You’ll succeed not just in your day-to-day role but in your career
+              as a whole through mobility, cross-functional development
+              opportunities, and coaching.
             </p>
           </div>
-          <div>
+          <div className="md:w-1/5 w-full">
             <svg
               width="60"
               height="61"
@@ -112,14 +121,14 @@ function TalentCard() {
                 fill="white"
               />
             </svg>
-            <h1>Big Ideas</h1>
+            <h1 className="my-4 font-bold">Be mentored</h1>
             <p>
-              We’re looking for problem-solvers, makers, and leaders who are
-              ready to roll up their sleeves and collaborate to ship solutions
-              to our customers.
+              You’ll learn from a wide variety of industry leaders, developing
+              solutions not only locally, but for the global market alongside
+              technology-focused teams in Kuwait.
             </p>
           </div>
-          <div>
+          <div className="md:w-1/5 w-full">
             <svg
               width="58"
               height="59"
@@ -176,11 +185,11 @@ function TalentCard() {
                 fill="white"
               />
             </svg>
-            <h1>Big Ideas</h1>
+            <h1 className="my-4 font-bold">Create experiences</h1>
             <p>
-              We’re looking for problem-solvers, makers, and leaders who are
-              ready to roll up their sleeves and collaborate to ship solutions
-              to our customers.
+              You'll create elegant digital experiences that let employees and
+              customers take charge and enable Boubyan to drive meaningful
+              change for every future.
             </p>
           </div>
         </div>
