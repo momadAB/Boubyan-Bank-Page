@@ -3,7 +3,7 @@ import Group56 from "../../ImgAssets/Group56.png";
 
 function Header() {
   return (
-    <div className="relative w-full flex justify-center items-center mb-32 text-[#54585A]">
+    <div className="relative w-full flex justify-center items-center mb-20 md:mb-32 text-[#54585A]">
       <div className="text-left max-w-96 z-10 m-8">
         <h1 className="">Boubyan</h1>
         <h1 className="font-bold text-3xl">
@@ -29,7 +29,7 @@ function Header() {
         height={0}
         sizes="100vw"
         style={{ width: "100%", height: "auto" }}
-        className="absolute md:mt-48 md:mb-48"
+        className="absolute mt-96 md:mt-72 md:mb-48"
       />
     </div>
   );

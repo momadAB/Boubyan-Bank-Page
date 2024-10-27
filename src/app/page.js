@@ -12,6 +12,7 @@ export default function Home() {
       <Part1 />
       <TalentCard />
       <Part3 />
+      <ApplySection />
     </div>
   );
 }

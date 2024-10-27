@@ -5,7 +5,7 @@ import Image from "next/image";
 function Footer() {
   return (
     <>
-      <footer className="relative  mt-[-25rem]">
+      <footer className="relative  mt-[-10rem]">
         <div className="grid md:grid-cols-2 grid-cols-1 text-white relative ">
           {/* Background Image */}
           <div className="absolute pointer-events-none bg-[#54585A] -z-10 overflow-x-visible overflow-y-visible h-full md:h-auto md:w-full md:bottom-auto flex items-end ">
