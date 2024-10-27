@@ -1,3 +1,5 @@
+import Image from "next/image";
+import ApplySection from "./components/ApplySection";
 import TalentCard from "@/components/TalentCard";
 import Header from "./components/Header";
 import Part1 from "./components/Part1";
