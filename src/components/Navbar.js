@@ -34,7 +34,7 @@ function Navbar() {
         <span>Why join us</span>
         <span>Careers</span>
       </div>
-      {/* TODO: Line seperator */}
+      {/* Line seperator */}
       <div className="border-2 border-[#979797]] h-8 mr-8"></div>
       {/* Linkedin Logo */}
       <div className="top-6 right-20 cursor-pointer">
