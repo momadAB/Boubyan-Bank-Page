@@ -8,7 +8,8 @@ import Path8 from "../ImgAssets/Path8.png";
 
 import Navbar from "@/components/Navbar";
 import TalentCard from "@/components/TalentCard";
-import MyWork from "@/components/MyWork";
+import MyWork from "@/components/Opportunities";
+import Opportunities from "@/components/Opportunities";
 
 export default function Home() {
   return (
@@ -76,7 +77,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <MyWork />
+      <Opportunities />
     </>
   );
 }
