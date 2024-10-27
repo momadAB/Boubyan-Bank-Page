@@ -5,6 +5,7 @@ import Group19 from "../ImgAssets/Group19.png";
 import Group17 from "../ImgAssets/Group17.png";
 import Path2 from "../ImgAssets/Path2.png";
 import Path8 from "../ImgAssets/Path8.png";
+import Group37 from "../ImgAssets/Group37.png";
 
 export default function Home() {
   return (
@@ -68,6 +69,14 @@ export default function Home() {
           />
         </div>
       </div>
+      <Image
+        src={Group37}
+        alt="Picture of Group37"
+        width={0}
+        height={0}
+        sizes="100vw"
+        style={{ width: "100%", height: "auto" }}
+      />
     </div>
   );
 }
